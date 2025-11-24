@@ -38,6 +38,7 @@ body {
     height: 50px;
 }
 
+
 .navbar ul {
     list-style: none;
     display: flex;
@@ -52,9 +53,16 @@ body {
     color: var(--color-white);
     padding: 5px 10px;
     transition: color 0.3s;
-    font-size: 0.95rem;
+    font-size: 0.85rem;
 }
-
+@media(max-width: 800px){
+    .log img {
+        width: 40px;
+    }
+    .navbar ul li a {
+        font-size: 12px;
+    }
+}
 .navbar ul li a:hover,
 .navbar ul li a.nav-cta {
     color: var(--color-gold-classic);
@@ -660,5 +668,93 @@ body {
 
     .navbar ul li {
         margin-left: 15px;
+    }
+}
+
+
+
+/* GRID DE LOGOS PREMIUM */
+.trusted-grid {
+    padding: 60px 5%;
+    margin-top: 40px;
+    text-align: center;
+    background: radial-gradient(circle at center, rgba(248, 232, 160, 0.08), transparent);
+}
+
+.trusted-grid .section-header h2 {
+    font-size: 2rem;
+    color: var(--color-soft-gold);
+    margin-bottom: 10px;
+}
+
+.trusted-grid .section-header p {
+    color: #dcdcdc;
+    font-size: 0.95rem;
+    max-width: 600px;
+    margin: 0 auto 40px;
+}
+
+/* GRID */
+.trusted-logos {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 35px;
+    align-items: center;
+}
+
+.logo-card {
+    background: #111111;
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    padding: 20px;
+    border-radius: 12px;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease;
+}
+
+/* IMAGEM */
+.logo-card img {
+    height: 55px;
+    max-width: 100%;
+    filter: brightness(0.9);
+    opacity: 0.9;
+    transition: 0.3s;
+}
+
+/* ANIMAÇÃO HOVER PREMIUM */
+.logo-card:hover {
+    transform: translateY(-6px) scale(1.05);
+    box-shadow: 0 10px 25px rgba(248, 232, 160, 0.3);
+    border-color: var(--color-gold-classic);
+}
+
+.logo-card:hover img {
+    filter: brightness(1);
+    opacity: 1;
+}
+
+/* RESPONSIVO */
+@media(max-width: 900px) {
+    .trusted-logos {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+    }
+}
+
+@media(max-width: 600px) {
+    .trusted-logos {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .logo-card {
+        height: 90px;
+        padding: 15px;
+    }
+
+    .logo-card img {
+        height: 45px;
     }
 }

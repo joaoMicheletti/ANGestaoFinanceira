@@ -116,50 +116,40 @@
     </section>
 
     <!-- CASES DE SUCESSO / CARROSSEL -->
-    <section id="cases" class="cases">
+    <!-- GRID DE LOGOS DE PARCEIROS / CONFIANÇA -->
+    <section class="trusted-grid">
         <div class="section-header">
-            <h2>Cases Reais de Crescimento e Proteção</h2>
-            <p>
-                Conheça alguns resultados construídos ao lado de empresários que decidiram profissionalizar a gestão
-                financeira e tratar o patrimônio com a seriedade que ele merece.
-            </p>
+            <h2>Empresas e parceiros</h2>
+            <p>veja as empresas que Confiam na A&N</p>
         </div>
 
-        <div class="cases-carousel-wrapper">
-            <button class="carousel-control prev" id="prevCase">&#10094;</button>
-
-            <div class="cases-carousel">
-                <div class="case-card active">
-                    <h3>Indústria Têxtil – São Paulo</h3>
-                    <p class="case-tag">Redução de Desperdícios</p>
-                    <p>
-                        Reorganização do fluxo de caixa e mapeamento de custos ocultos resultaram em
-                        <strong>economia de 18% ao ano</strong> e recuperação da capacidade de investimento em novos equipamentos.
-                    </p>
-                </div>
-
-                <div class="case-card next">
-                    <h3>Rede de Clínicas – Interior</h3>
-                    <p class="case-tag">Expansão com Segurança</p>
-                    <p>
-                        Estruturamos indicadores financeiros, previsões e cenários, permitindo a abertura de
-                        <strong>3 novas unidades</strong> sem comprometer o equilíbrio do caixa e a saúde do negócio.
-                    </p>
-                </div>
-
-                <div class="case-card prev">
-                    <h3>Grupo Logístico – Nacional</h3>
-                    <p class="case-tag">Patrimônio Blindado</p>
-                    <p>
-                        Revisão de contratos, endividamento e investimentos para construir uma estrutura mais leve,
-                        blindando o patrimônio e aumentando a previsibilidade dos resultados mensais.
-                    </p>
-                </div>
+        <div class="trusted-logos">
+            <div class="logo-card">
+                <img src="./assets/contabil.jpeg" alt="GitHub">
             </div>
 
-            <button class="carousel-control next" id="nextCase">&#10095;</button>
+            <div class="logo-card">
+                <img src="./assets/GOOGEL.png" alt="Banco Safra">
+            </div>
+
+            <div class="logo-card">
+                <img src="./assets/mp.png" alt="MP"/>
+            </div>
+
+            <div class="logo-card">
+                <img src="./assets/CISCO.png" alt="Cisco">
+            </div>
+
+            <div class="logo-card">
+                <img src="./assets/SAF.png" alt="Discord">
+            </div>
+
+            <div class="logo-card">
+                <img src="data:image/png;base64,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" alt="Asus">
+            </div>
         </div>
     </section>
+
 
     <!-- FAQ -->
     <section id="faq" class="faq">
