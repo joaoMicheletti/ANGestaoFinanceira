@@ -263,7 +263,74 @@ body {
     font-size: 0.95rem;
     color: #f1f1f1;
 }
+/* <!-- implementar aqui sobre o BOP e Consultoria--> */
+.services {
+    margin-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;padding-top: 40px;
+}
+#seletorTexto {
+    width: 90%;
+    margin-left: 5%;
+    padding-top:50px;
+    text-align: center;
+}
+#titletudo {
+    text-align: center;
+    font-size: 40px;
+    color: var(--color-soft-gold);
+    margin-bottom: 20px;
+    text-align: center;
+}
+#titletudo .anNegrito {
+    font-weight: 900;
+    
+}
+.anNegrito {
+    font-weight: 900;
+}
+.service-card {
+    width: 40%;
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+    
+}
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(212, 175, 55, 0.4);
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: #B2873F 0px 10px 20px;
 
+}
+#consultoriaf {
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.76),
+      rgba(0, 0, 0, 0.76)
+    ),
+    url("assets/consultoriafinanceira.jpg") center center / cover no-repeat;
+}
+#BPO {
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.76),
+      rgba(0, 0, 0, 0.76)
+    ),
+    url("assets/bpo.jpg") center center / cover no-repeat;
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.service p {
+    font-size: 1rem;
+    text-align: left;
+}
 /* CASES / CARROSSEL */
 .cases {
     margin-top: 40px;
@@ -606,6 +673,15 @@ body {
 
 /* RESPONSIVIDADE */
 @media (max-width: 900px) {
+    .service-card {
+        margin-left: 10%;
+        margin-bottom: 40px;
+        width: 80%;
+    }
+    .services {
+        display: flex;
+        flex-direction: column;
+    }
     .features {
         flex-direction: column;
         gap: 15px;
